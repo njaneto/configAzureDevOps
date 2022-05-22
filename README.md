@@ -1,4 +1,4 @@
-<h1 align="center"> Configure repository and pipeline in Azure DevOps </h1>
+<h1 align="center"> Configure repository and pipeline with Azure DevOps Rest Api</h1>
 
 Using Azure Devops Rest API to automate the process of creating the repository and pipeline, as well as configuring the policy, creating and starting the pipeline created.
 
