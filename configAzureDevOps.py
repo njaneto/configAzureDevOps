@@ -216,10 +216,10 @@ def createAndConfigPipeline(pat, uri, name):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("pat", type=str, help="Authentication token generated in azure devops PAT")
-    parser.add_argument("org", type=str, help="Organization url")
-    parser.add_argument("project_id", type=str, help="Unique project number")
-    parser.add_argument("repo_name", type=str, help="Repository name")
+    parser.add_argument("--pat", action="store", type=str, help="Authentication token generated in azure devops PAT")
+    parser.add_argument("--org", action="store", type=str, help="Organization url")
+    parser.add_argument("--project_id", action="store", type=str, help="Unique project number")
+    parser.add_argument("--repo_name", action="store", type=str, help="Repository name")
 
     parser.add_argument("-v", "--validate_repo", action="store_true", help="Parameter to check if the repository exists")
     parser.add_argument("-c", "--create_repo", action="store_true", help="Parameter to create the repository")
